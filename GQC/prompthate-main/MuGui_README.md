@@ -24,6 +24,7 @@ transformers==4.39.9
 - 两种方式运行：
   1.python main.py
     以默认的参数运行，只对 mem 这个数据集进行训练
+  
   2.bash run.sh
     自己设置的 10 个随机种子和学习率，分别对 mem 和 harm 两个数据集进行训练
   
