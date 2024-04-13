@@ -36,8 +36,7 @@ config.py : 配置参数，batch_size 默认是 16，CUDA_DEVICE 默认是 1
 main.py : 主函数
 
 dataset.py : 读取预处理好的数据集，主要内容是 " it is <mask> " prompt 模板构建，和 demostration 构建。一个 demostration = Meme Text + Image Caption + Template。最后返回的是下面三个拼接的 demostration。
-
-![image-20240413104714666](C:\Users\cxmug\AppData\Roaming\Typora\typora-user-images\image-20240413104714666.png)
+![image](https://github.com/CXMuGui/PaperCode/assets/86507078/773440e0-604e-469f-829e-448e852a5df6)
 
 baseline.py : 模型文件，预测 <mask> 这个位置上所有单词（vocab）的得分，取得自己指定的提示词在 <mask> 上的得分（这里提示词是 good 和 bad），最后返回到 trian.py 算损失。
 
