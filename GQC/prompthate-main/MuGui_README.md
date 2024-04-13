@@ -22,8 +22,10 @@ transformers==4.39.9
 
 - 切换自己的路径： cd your/filepath/prompthate-main/PromptHate-Code/
 
-- 设置路径，在 config.py 文件里面设置
+- 设置路径，在 config.py 文件里面设置:
+  
     parser.add_argument('--DATA',type=str,default='/212023085404022/workspace/PaperCode/HatefulMemes/data')
+  
     parser.add_argument('--CAPTION_PATH',type=str,default='/212023085404022/workspace/PaperCode/HatefulMemes/caption')
     
 - 两种方式运行：
