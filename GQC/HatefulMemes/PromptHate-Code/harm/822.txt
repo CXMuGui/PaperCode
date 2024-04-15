@@ -1,0 +1,87 @@
+DATASET : harm
+FEW_SHOT : False
+FINE_GRIND : False
+NUM_SHOTS : 16
+MODEL : pbm
+UNIMODAL : False
+DATA : /212023085404022/workspace/PaperCode/HatefulMemes/data
+CAPTION_PATH : /212023085404022/workspace/PaperCode/HatefulMemes/caption
+RESULT : ./result
+FEAT_DIM : 2048
+CLIP_DIM : 512
+BERT_DIM : 768
+ROBERTA_DIM : 1024
+NUM_FOLD : 5
+EMB_DIM : 300
+NUM_LABELS : 2
+POS_WORD : good
+NEG_WORD : bad
+DEM_SAMP : False
+SIM_RATE : 0.5
+IMG_RATE : 0.5
+TEXT_RATE : 0.5
+CLIP_CLEAN : False
+MULTI_QUERY : True
+NUM_QUERIES : 4
+EMB_DROPOUT : 0.0
+FC_DROPOUT : 0.4
+WEIGHT_DECAY : 0.01
+LR_RATE : 1.3e-05
+EPS : 1e-08
+BATCH_SIZE : 16
+FIX_LAYERS : 0
+MID_DIM : 512
+NUM_HIDDEN : 512
+LENGTH : 64
+TOTAL_LENGTH : 256
+PREFIX_LENGTH : 10
+NUM_SAMPLE : 1
+NUM_LAYER : 8
+MODEL_NAME : roberta-large
+PRETRAIN_DATA : conceptual
+IMG_VERSION : clean
+MAPPING_TYPE : transformer
+ADD_ENT : True
+ADD_DEM : True
+DEBUG : False
+SAVE : False
+SAVE_NUM : 822
+EPOCHS : 10
+SEED : 1112
+CUDA_DEVICE : 1
+WARM_UP : 2000
+TRANS_LAYER : 1
+NUM_HEAD : 8
+Length of training set: 3013, length of testing set: 354
+Epoch 0
+	train_loss: 469.32, accuracy: 66.51
+	evaluation auc: 89.88, accuracy: 73.16
+Epoch 1
+	train_loss: 188.09, accuracy: 77.27
+	evaluation auc: 90.47, accuracy: 83.05
+Epoch 2
+	train_loss: 162.65, accuracy: 81.02
+	evaluation auc: 90.22, accuracy: 83.90
+Epoch 3
+	train_loss: 138.52, accuracy: 84.50
+	evaluation auc: 89.50, accuracy: 80.79
+Epoch 4
+	train_loss: 113.05, accuracy: 88.08
+	evaluation auc: 88.43, accuracy: 82.77
+Epoch 5
+	train_loss: 82.14, accuracy: 91.54
+	evaluation auc: 87.44, accuracy: 80.79
+Epoch 6
+	train_loss: 60.00, accuracy: 94.16
+	evaluation auc: 88.92, accuracy: 82.77
+Epoch 7
+	train_loss: 44.02, accuracy: 95.45
+	evaluation auc: 85.22, accuracy: 81.36
+Epoch 8
+	train_loss: 27.04, accuracy: 97.51
+	evaluation auc: 86.16, accuracy: 79.94
+Epoch 9
+	train_loss: 15.82, accuracy: 98.71
+	evaluation auc: 85.84, accuracy: 79.94
+Maximum epoch: 2
+	evaluation auc: 90.22, accuracy: 83.90

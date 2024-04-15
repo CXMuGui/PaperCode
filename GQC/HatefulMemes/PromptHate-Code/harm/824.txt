@@ -1,0 +1,87 @@
+DATASET : harm
+FEW_SHOT : False
+FINE_GRIND : False
+NUM_SHOTS : 16
+MODEL : pbm
+UNIMODAL : False
+DATA : /212023085404022/workspace/PaperCode/HatefulMemes/data
+CAPTION_PATH : /212023085404022/workspace/PaperCode/HatefulMemes/caption
+RESULT : ./result
+FEAT_DIM : 2048
+CLIP_DIM : 512
+BERT_DIM : 768
+ROBERTA_DIM : 1024
+NUM_FOLD : 5
+EMB_DIM : 300
+NUM_LABELS : 2
+POS_WORD : good
+NEG_WORD : bad
+DEM_SAMP : False
+SIM_RATE : 0.5
+IMG_RATE : 0.5
+TEXT_RATE : 0.5
+CLIP_CLEAN : False
+MULTI_QUERY : True
+NUM_QUERIES : 4
+EMB_DROPOUT : 0.0
+FC_DROPOUT : 0.4
+WEIGHT_DECAY : 0.01
+LR_RATE : 1.3e-05
+EPS : 1e-08
+BATCH_SIZE : 16
+FIX_LAYERS : 0
+MID_DIM : 512
+NUM_HIDDEN : 512
+LENGTH : 64
+TOTAL_LENGTH : 256
+PREFIX_LENGTH : 10
+NUM_SAMPLE : 1
+NUM_LAYER : 8
+MODEL_NAME : roberta-large
+PRETRAIN_DATA : conceptual
+IMG_VERSION : clean
+MAPPING_TYPE : transformer
+ADD_ENT : True
+ADD_DEM : True
+DEBUG : False
+SAVE : False
+SAVE_NUM : 824
+EPOCHS : 10
+SEED : 1114
+CUDA_DEVICE : 1
+WARM_UP : 2000
+TRANS_LAYER : 1
+NUM_HEAD : 8
+Length of training set: 3013, length of testing set: 354
+Epoch 0
+	train_loss: 476.46, accuracy: 65.42
+	evaluation auc: 83.26, accuracy: 75.99
+Epoch 1
+	train_loss: 193.07, accuracy: 77.56
+	evaluation auc: 87.95, accuracy: 80.51
+Epoch 2
+	train_loss: 160.72, accuracy: 81.35
+	evaluation auc: 91.42, accuracy: 77.12
+Epoch 3
+	train_loss: 131.98, accuracy: 85.63
+	evaluation auc: 91.53, accuracy: 72.32
+Epoch 4
+	train_loss: 98.01, accuracy: 90.21
+	evaluation auc: 89.15, accuracy: 79.66
+Epoch 5
+	train_loss: 65.70, accuracy: 93.20
+	evaluation auc: 88.70, accuracy: 76.27
+Epoch 6
+	train_loss: 37.63, accuracy: 96.22
+	evaluation auc: 86.14, accuracy: 79.10
+Epoch 7
+	train_loss: 22.71, accuracy: 98.11
+	evaluation auc: 88.31, accuracy: 77.12
+Epoch 8
+	train_loss: 13.88, accuracy: 98.71
+	evaluation auc: 88.46, accuracy: 77.12
+Epoch 9
+	train_loss: 9.18, accuracy: 99.00
+	evaluation auc: 88.06, accuracy: 78.81
+Maximum epoch: 4
+	evaluation auc: 89.15, accuracy: 79.66

@@ -1,0 +1,87 @@
+DATASET : mem
+FEW_SHOT : False
+FINE_GRIND : False
+NUM_SHOTS : 16
+MODEL : pbm
+UNIMODAL : False
+DATA : /212023085404022/workspace/PaperCode/HatefulMemes/data
+CAPTION_PATH : /212023085404022/workspace/PaperCode/HatefulMemes/caption
+RESULT : ./result
+FEAT_DIM : 2048
+CLIP_DIM : 512
+BERT_DIM : 768
+ROBERTA_DIM : 1024
+NUM_FOLD : 5
+EMB_DIM : 300
+NUM_LABELS : 2
+POS_WORD : good
+NEG_WORD : bad
+DEM_SAMP : False
+SIM_RATE : 0.5
+IMG_RATE : 0.5
+TEXT_RATE : 0.5
+CLIP_CLEAN : False
+MULTI_QUERY : True
+NUM_QUERIES : 4
+EMB_DROPOUT : 0.0
+FC_DROPOUT : 0.4
+WEIGHT_DECAY : 0.01
+LR_RATE : 1.3e-05
+EPS : 1e-08
+BATCH_SIZE : 16
+FIX_LAYERS : 2
+MID_DIM : 512
+NUM_HIDDEN : 512
+LENGTH : 64
+TOTAL_LENGTH : 256
+PREFIX_LENGTH : 10
+NUM_SAMPLE : 1
+NUM_LAYER : 8
+MODEL_NAME : roberta-large
+PRETRAIN_DATA : conceptual
+IMG_VERSION : clean
+MAPPING_TYPE : transformer
+ADD_ENT : True
+ADD_DEM : True
+DEBUG : False
+SAVE : False
+SAVE_NUM : 826
+EPOCHS : 10
+SEED : 1116
+CUDA_DEVICE : 1
+WARM_UP : 2000
+TRANS_LAYER : 1
+NUM_HEAD : 8
+Length of training set: 8500, length of testing set: 500
+Epoch 0
+	train_loss: 890.08, accuracy: 68.15
+	evaluation auc: 71.62, accuracy: 62.20
+Epoch 1
+	train_loss: 517.39, accuracy: 77.80
+	evaluation auc: 75.73, accuracy: 67.00
+Epoch 2
+	train_loss: 426.33, accuracy: 82.55
+	evaluation auc: 80.93, accuracy: 71.60
+Epoch 3
+	train_loss: 343.68, accuracy: 86.88
+	evaluation auc: 82.73, accuracy: 75.00
+Epoch 4
+	train_loss: 265.20, accuracy: 90.18
+	evaluation auc: 81.43, accuracy: 71.60
+Epoch 5
+	train_loss: 184.07, accuracy: 93.58
+	evaluation auc: 81.06, accuracy: 72.20
+Epoch 6
+	train_loss: 117.93, accuracy: 95.65
+	evaluation auc: 81.54, accuracy: 68.00
+Epoch 7
+	train_loss: 80.09, accuracy: 97.25
+	evaluation auc: 81.99, accuracy: 70.40
+Epoch 8
+	train_loss: 44.21, accuracy: 98.55
+	evaluation auc: 82.60, accuracy: 73.00
+Epoch 9
+	train_loss: 28.59, accuracy: 99.07
+	evaluation auc: 82.52, accuracy: 73.40
+Maximum epoch: 3
+	evaluation auc: 82.73, accuracy: 75.00
